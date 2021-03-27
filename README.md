@@ -9,23 +9,25 @@ pic pic
 
 ## 实验说明
 #### 小车模型：
+![小车模型](https://github.com/TejasPhutane/Differential-Drive-robot-ROS-gazebo-teleop/blob/main/rrc_2wheel_robot.png)
+
 * 小车的正前，正左，正右安装有三个超声波传感器，传感器的最大探测距离为0.2m，最小探测距离为0.02m, 精度0.01m。
-* 小车提供差速模型，无需单独控制轮子转速，只需提供前进速度**v**, 转弯速度 ** w**(逆时针为正)，即可控制小车运动。
+* 小车提供差速模型，无需单独控制轮子转速，只需提供前进速度**v**, 转弯速度 **w**(逆时针为正)，即可控制小车运动。
 * 小车提供由轮速计估计的里程计信息，在仿真环境里可以认为是无误差的。
 
 #### 串口通信：
 * stm32运行BUG2算法，需要的信息有目标点位置，当前位置，三个传感器的数据，因此将接收帧编码成如下格式：(每帧32bytes)
 	
 float(4bytes)  | float(4bytes)| float(4bytes)| float(4bytes)| float(4bytes)|    float(4bytes)| float(4bytes)| float(4bytes)
-------------- | -------------|---|
+------------- | -------------|---|  
 goal_x| goal_y|cur_x|cur_y|cur_yaw|sonar_f|sonar_l|sonar_r
 
 
 * 计算结果为机器人的控制信息，即前进速度v，角速度w, 因此将发送帧编码成如下格式：（每帧8bytes）
 
-float(4bytes)  | float(4bytes)
--------------|---
-v | w
+float(4bytes)  | float(4bytes)  
+-------------|---  
+v | w  
 
 #### 实验结果
 link
@@ -35,7 +37,7 @@ link
 * Ubuntu18.04
 * ROS
 * gazebo
-1. 
+1. 下载仿真环境所需模型
 ```
 mkdir -p ~/bug2_sim_ws/src && cd ~/bug2_sim_ws/src
 git clone https://github.com/TejasPhutane/Differential-Drive-robot-ROS-gazebo-teleop.git
