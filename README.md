@@ -20,8 +20,8 @@
 #### 串口通信：
 * stm32运行BUG2算法，需要的信息有目标点位置，当前位置，三个传感器的数据，因此将接收帧编码成如下格式：(每帧32bytes)
 
-float(4bytes)  | float(4bytes)| float(4bytes)| float(4bytes)| float(4bytes)|    float(4bytes)| float(4bytes)| float(4bytes)    
-------------- | -------------|---|  
+float(4bytes)  | float(4bytes)| float(4bytes)| float(4bytes)| float(4bytes)|float(4bytes)| float(4bytes)| float(4bytes)    
+------------- | -------------|---|---
 goal_x| goal_y|cur_x|cur_y|cur_yaw|sonar_f|sonar_l|sonar_r  
 
 
