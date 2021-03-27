@@ -11,7 +11,7 @@
 
 ## 实验说明
 #### 小车模型：
-![小车模型](https://github.com/TejasPhutane/Differential-Drive-robot-ROS-gazebo-teleop/blob/main/rrc_2wheel_robot.png)
+![小车模型](https://github.com/TejasPhutane/Differential-Drive-robot-ROS-gazebo-teleop/blob/main/rrc_2wheel_robot.png =200)
 
 * 小车的正前，正左，正右安装有三个超声波传感器，传感器的最大探测距离为0.2m，最小探测距离为0.02m, 精度0.01m。
 * 小车提供差速模型，无需单独控制轮子转速，只需提供前进速度**v**, 转弯速度 **w**(逆时针为正)，即可控制小车运动。
