@@ -2,7 +2,8 @@
 ## 写在前面
 
 * 本项目是**BUG2**算法在**stm32F407**上运行的可行性验证实验。程序运行在stm32上，仿真环境为ROS+gazebo，二者通过串口通信。
-pic pic 
+![实物展示]()  
+![仿真界面展示]()  
 
 * BUG2算法是机器人运动规划的一个经典算法，更详细的介绍及更多的机器人运动规划算法可移步: http://www.cs.cmu.edu/~motionplanning/lecture/lecture.html
 
@@ -18,7 +19,7 @@ pic pic
 #### 串口通信：
 * stm32运行BUG2算法，需要的信息有目标点位置，当前位置，三个传感器的数据，因此将接收帧编码成如下格式：(每帧32bytes)
 	
-float(4bytes)  | float(4bytes)| float(4bytes)| float(4bytes)| float(4bytes)|    float(4bytes)| float(4bytes)| float(4bytes)
+float(4bytes)  | float(4bytes)| float(4bytes)| float(4bytes)| float(4bytes)|    float(4bytes)| float(4bytes)| float(4bytes)  
 ------------- | -------------|---|  
 goal_x| goal_y|cur_x|cur_y|cur_yaw|sonar_f|sonar_l|sonar_r
 
@@ -30,7 +31,7 @@ float(4bytes)  | float(4bytes)
 v | w  
 
 #### 实验结果
-link
+![实验结果]()  
 
 ## 安装与部署
 #### PC 端
