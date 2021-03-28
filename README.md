@@ -33,7 +33,8 @@ float(4bytes)  | float(4bytes)
 v | w  
 
 #### 实验结果
-![实验结果]()  
+演示视频（请下载到你本地的电脑上观看）
+<https://github.com/buenos-dan/BUG2_sim/blob/master/assets/bug2_algo_sim.mp4>  
 
 ## 安装与部署
 #### PC 端
