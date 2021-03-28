@@ -4,8 +4,7 @@
 * 本项目是**BUG2**算法在**stm32F407**上运行的可行性验证实验。程序运行在stm32上，仿真环境为ROS+gazebo，二者通过串口通信。  
   
 <figure class="half">
-    <img src="https://github.com/buenos-dan/BUG2_sim/blob/master/assets/realsense.jpeg" width = "300" height = "200" alt="实物展示" />
-    <img src="https://github.com/buenos-dan/BUG2_sim/blob/master/assets/simulator.png" width = "300" height = "200" alt="仿真界面展示" /> 
+    <img src="https://github.com/buenos-dan/BUG2_sim/blob/master/assets/realsense.jpeg" width = "300" height = "200" alt="实物展示" /><img src="https://github.com/buenos-dan/BUG2_sim/blob/master/assets/simulator.png" width = "300" height = "200" alt="仿真界面展示" /> 
 </figure>
  
 
